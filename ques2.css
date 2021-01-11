@@ -1,0 +1,246 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5;
+    background-image: url(./hospital.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover
+}
+.top{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+}
+li{
+    float: left;
+}
+li a, .dropbtn {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: large;
+    padding: 10px 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+     
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #f1f1f1;
+    color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}      
+.dropdown-content a{
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #f1f1ff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.about{
+    float: right;
+}
+.bg{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+.bg img{
+    width: 100%;
+    height: 800px;
+}
+.doc{
+    text-align: center;
+    width:75%;
+    margin: auto;
+    margin-top:50px;
+}
+.imgDis{
+    max-width: 100%;
+    padding: 120px 40px;
+    display: flex;
+    margin-right: 50px; 
+    margin-left: 50px;
+}
+.Dis{
+    width: 60%;
+    text-align: justify;
+}
+.maskimg {
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+.maskimg img{
+    width: 100%;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+}
+.doctors{
+    max-height: 400px;
+    background: rgba(0,0,0,0.8);
+    margin-top: 50px;
+    padding: 100px;
+}
+.card{
+    text-align: center;
+    color: #f1f1f1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+@media only screen and (max-width: 1200px) {
+    li a, .dropbtn {
+        padding: 8px 16px;
+        text-decoration: none;
+        font-family: Verdana;
+        font-size: large;
+        padding: 5px 24px;
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+    .dropdown-content a{
+        font-size: 17px;
+    }
+    .bg img{
+        height: 600px;
+    }
+    .doc{
+        width:100%;
+    }
+    .imgDis{
+        padding: 50px 40px;
+    }
+    .Dis{
+        width: 50%;
+    }
+    .maskimg {
+        width: 49%;
+        margin: auto;
+    }
+    .maskimg img{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    li a, .dropbtn {
+        padding: 5px 10px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .dropdown-content {
+        min-width: 300px;
+    }  
+    .bg img{
+        height: 500px;
+    }
+    .doc{
+        width:100%;
+        padding: 0px;
+    }
+    .imgDis{
+        padding: 50px 40px;
+        display: block;
+    }
+    .Dis{
+        width: 100%;
+    }
+    .maskimg {
+        width: 100%;
+        margin: auto;
+    }
+    .maskimg img{
+        width: 50%;
+    }
+    .doctors{
+        max-height: 100px;
+        padding: 50px;    
+    }
+}
+@media only screen and (max-width: 620px) {
+    li a, .dropbtn {
+        padding: 5px 10px;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    .dropdown-content a{
+        padding: 4px 16px;
+        font-size: 13px;
+    }
+    .dropdown-content {
+        min-width: 200px;
+    }  
+    .bg img{
+        height: 350px;
+        margin-top: 20px;
+    }
+    .imgDis{
+        padding: 50px 40px;
+        display: block;
+        margin: 0px;
+    }
+    .doctors{
+        max-height: 150px;
+        padding: 50px;    
+    }
+}
+@media only screen and (max-width: 450px) {
+    li a, .dropbtn {
+        padding: 5px 10px;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    .dropdown-content a{
+        padding: 4px 16px;
+        font-size: 13px;
+    }
+    .dropdown-content {
+        min-width: 200px;
+    }  
+    .bg img{
+        height: 300px;
+        margin-top: 25px;
+    }
+    .doc{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .doctors{
+        max-height: 150px;
+        padding: 20px;    
+    }
+    #out{
+        display: none;
+    }
+    #service{
+        display: none;
+    }
+}

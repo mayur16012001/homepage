@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" type="text/css" href="ques1.css">
+</head>
+<body>
+    <div class="Appointment-form">
+        <form name="Book" onsubmit="return(validation())">
+            <h2>Book Appointment</h2>
+            <div class="book">
+                <input type="text" name="name" placeholder="Enter Full Name" >
+            
+                <input type="text" name="mobile_no" placeholder="Enter Mobile Number">
+            
+                <input type="email" name="email" placeholder="Enter Email Address" >
+                <input type="text" name="Appointment" onfocus="(this.type='date')" placeholder="Appointment Date" >
+                
+            </div>
+            <h3>Address Details</h3>
+            <div class="address">
+                <div style="display: flex;justify-content: space-between;">
+                    <input type="text" name="Area" placeholder="Enter Area" >
+                    <input type="text" name="City" placeholder="Enter City" >
+                </div>
+                <div style="display: flex;justify-content: space-between;">
+                    <input type="text" name="State" placeholder="Enter State" >
+                    <input type="text" name="postal_code" placeholder="Postal code" >
+                </div>
+            </div>
+            <button type="submit" class="btn">Book Appointment</button>
+        </form>
+    </div>
+    <script>
+        function validation(){
+            if(!document.Book.name.value){
+                alert("Please Enter your Name..!")
+                document.Book.name.focus();
+                return false;
+            }
+            if(document.Book.mobile_no.value == ""){
+                alert("Please enter your Mobile no..!")
+                document.Book.mobile_no.focus();
+                return false;
+            }
+            if(document.Book.mobile_no.value.length != 10){
+                alert("Please enter 10 digit Mobile no..!")
+                document.Book.mobile_no.focus();
+                return false;
+            }
+            if(document.Book.email.value == ""){
+                alert("Please enter your email..!")
+                document.Book.email.focus();
+                return false;
+            }
+            if(document.Book.Appointment.value == ""){
+                alert("Please enter Appointment Date..!")
+                document.Book.Appointment.focus();
+                return false;
+            }
+            if(document.Book.Area.value == ""){
+                alert("Please fill Blank area..!")
+                document.Book.Area.focus();
+                return false;
+            }
+            if(document.Book.City.value == ""){
+                alert("Please enter your City..!")
+                document.Book.City.focus();
+                return false;
+            }
+            if(document.Book.State.value == ""){
+                alert("Please enter your State..!")
+                document.Book.State.focus();
+                return false;
+            }
+            
+            if(document.Book.postal_code.value == ""){
+                alert("Please enter your Postal Code..!")
+                document.Book.postal_code.focus();
+                return false;
+            }
+            alert(`Your Appointment is Booked ${document.Book.name.value}`)
+        }
+    </script>
+</body>
+</html>

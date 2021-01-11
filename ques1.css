@@ -1,0 +1,76 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana;
+}
+body::before{
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./back.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(10px);
+}
+.Appointment-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 520px;
+    padding: 30px;
+    padding-right: 45px;
+    padding-left: 40px;
+    background: rgba(0, 0, 0, 0.747);
+    color: white;
+}
+.Appointment-form .book input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.Appointment-form .address input{
+    margin-bottom: 15px;
+    width: 45%;
+}
+.Appointment-form input[type=text],
+.Appointment-form input[type=number],
+.Appointment-form input[type=email],
+.Appointment-form input[type=date]{
+    border:none;
+    border-bottom: 1px solid black;
+    color: white;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    font-size: 16px;
+    
+}
+.Appointment-form button[type=submit]{
+    
+    color: white;
+    font-size: 15px;
+    background: black;
+    font-family: Verdana;
+    cursor:pointer;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.Appointment-form h2{
+    font-size: 30px;
+    padding: 0px;
+}
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
+     background-color: white !important;
+     color: black !important;
+  }
+
+  
